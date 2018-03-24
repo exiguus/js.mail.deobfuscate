@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../node_modules/qunit/qunit/qunit.css">
+        <title>Test Mail deobfuscate jQuery Plugin</title>
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
+        <script src="../node_modules/qunit/qunit/qunit.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../dist/jquery.mail.obfuscate.min.js"></script>
+        <script>
+          $('a[href^="mailto:"]').each(function () {
+            $(this).on('click', function() {
+              $(this).mailDeobfuscate()
+            })
+          })
+        </script>
+        <script src="test.jquery.js"></script>
+    </body>
+</html>

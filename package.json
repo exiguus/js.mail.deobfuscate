@@ -1,0 +1,52 @@
+{
+  "name": "js.mail.deobfuscate",
+  "version": "1.0.0",
+  "description": "jQuery Plugin that Deobfuscate rot13 ceasar cipher encoded mailto links",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-qunit": "^3.2.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "grunt": "^1.0.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-eslint": "^20.1.0",
+    "jit-grunt": "^0.10.0",
+    "jquery": "^3.3.1",
+    "load-grunt-configs": "^1.0.0",
+    "node-qunit-phantomjs": "^2.0.0",
+    "npm": "^5.7.1",
+    "qunit": "^2.5.1",
+    "qunit-reporter-junit": "^1.1.1",
+    "qunitjs": "^2.4.1",
+    "time-grunt": "^1.4.0"
+  },
+  "scripts": {
+    "build": "grunt",
+    "dist": "grunt dist",
+    "test": "node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs test/test.jquery.html"
+  },
+  "keywords": [
+    "rot13",
+    "ceasar",
+    "cipher",
+    "mail",
+    "mailto",
+    "link",
+    "obfuscate",
+    "deobfuscate",
+    "jquery"
+  ],
+  "author": "Simon Gattner",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exiguus/js.mail.deobfuscate.git"
+  },
+  "dependencies": {}
+}
