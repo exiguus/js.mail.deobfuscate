@@ -52,7 +52,7 @@
     "test": "npm run test-qunit && npm run test-qunit-min && npm run test-jasmine",
     "test-qunit": "node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs src/index.jquery.test.html",
     "test-qunit-min": "node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs src/index.jquery.test.min.html",
-    "test-jasmine": "cross-env NODE_ENV=dev karma start"
+    "test-jasmine": "cross-env NODE_ENV=dev karma start --single-run"
   },
   "keywords": [
     "rot13",
