@@ -6,18 +6,18 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Mail deobfuscate jQuery Plugin</title>
+        <title>Mail deobfuscate modul</title>
     </head>
     <body>
         <header>
           <h1>Mail deobfuscate</h1>
-          <h2>jQuery Plugin</h2>
+          <h2>ECMAScript 6 Class and Module</h2>
         </header>
 
         <main>
           <article>
             <h2>Mail deobfuscating with <em>rot13 ceasar cipher</em></h2>
-            <p>The plugin deobfuscate a mailto-link which was obfuscated with <em>rot13 ceasar cipher</em> onClick in this example</p>
+            <p>The module deobfuscate a mailto-link which was obfuscated with <em>rot13 ceasar cipher</em> onClick in this example</p>
             <h2>Example:</h2>
             <h3>
               E-Mail with <em>rot13 ceasar cipher</em> ciphed:
@@ -52,25 +52,17 @@
             <h4>mailDeobfuscate event binding</h4>
 <pre>
 <code>
-  &lt;script&gt;
-    $('a[href^=&quot;mailto:&quot;]').each(function () {
-      $(this).on('click', function() {
-        $(this).mailDeobfuscate()
-      })
+  import mailDeobfuscate from &#x27;./js/mail.deobfuscate.module&#x27;
+
+  const elements = document.querySelectorAll(&#x27;a&#x27;)
+  elements.forEach(function (element) {
+    element.addEventListener(&#x27;click&#x27;, function () {
+      mailDeobfuscate(this)
     })
-  &lt;/script&gt;
+  })
 </code>
 </pre>
           </article>
         </main>
-        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="js/jquery.mail.deobfuscate.js"></script>
-        <script>
-          $('a[href^="mailto:"]').each(function () {
-            $(this).on('click', function() {
-              $(this).mailDeobfuscate()
-            })
-          })
-        </script>
     </body>
 </html>

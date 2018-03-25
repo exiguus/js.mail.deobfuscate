@@ -16,15 +16,15 @@ QUnit.module('Test Mail deobfuscate jQuery Plugin', function (hooks) {
     if (CONSOLE_LOG) console.info('Now running: ', details.name)
   })
   QUnit.test('$.mailDeobfuscate', function (assert) {
-    assert.equal(typeof $.mailDeobfuscate === 'object', true, 'is object')
-    assert.equal(typeof $.mailDeobfuscate.replaceString === 'function', true, 'is function')
-    assert.equal(typeof $.mailDeobfuscate.decodeString === 'function', true, 'is function')
-    // decodeString
-    assert.equal($.mailDeobfuscate.decodeString('a'), 'n', 'decodeString("a") is n')
-    assert.equal($.mailDeobfuscate.decodeString('G23'), 'T', 'decodeString("G23") is T23')
-    assert.equal($.mailDeobfuscate.decodeString('@'), 'M', 'decodeString("@") is M')
-    assert.equal($.mailDeobfuscate.decodeString('Ö'), 'É', 'decodeString("Ö") is É')
-    assert.equal($.mailDeobfuscate.decodeString('4'), 'A', 'decodeString("4") is A')
+    assert.equal(typeof $.mailDeobfuscate === 'object', true, '$.mailDeobfuscate is object')
+    assert.equal(typeof $.mailDeobfuscate.replaceString === 'function', true, '$.mailDeobfuscate.replaceString is function')
+    assert.equal(typeof $.mailDeobfuscate.decodeChar === 'function', true, '$.mailDeobfuscate.decodeChar is function')
+    // decodeChar
+    assert.equal($.mailDeobfuscate.decodeChar('a'), 'n', 'decodeChar("a") is n')
+    assert.equal($.mailDeobfuscate.decodeChar('G23'), 'T', 'decodeChar("G23") is T23')
+    assert.equal($.mailDeobfuscate.decodeChar('@'), 'M', 'decodeChar("@") is M')
+    assert.equal($.mailDeobfuscate.decodeChar('Ö'), 'É', 'decodeChar("Ö") is É')
+    assert.equal($.mailDeobfuscate.decodeChar('4'), 'A', 'decodeChar("4") is A')
     // replaceString
     assert.equal($.mailDeobfuscate.replaceString('nopqrstuvwxyzabcdefghijklm'), 'abcdefghijklmnopqrstuvwxyz', 'replaceString("abcdefghijklmnopqrstuvwxyz") is nopqrstuvwxyzabcdefghijklm')
     assert.equal($.mailDeobfuscate.replaceString('Simon'), 'Fvzba', 'replaceString("Simon") is Fvzba')

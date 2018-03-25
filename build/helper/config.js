@@ -15,5 +15,17 @@ config.options = {
     dev: 'src',
     // dist folder with minified and optimized files
     dist: 'dist'
-  }
+  },
+  name: {
+    plugin: 'mail.deobfuscate'
+  },
+  banner: "/*!\n" + // eslint-disable-line quotes
+          " * <%= pkg.name %> <%= pkg.version %>\n" + // eslint-disable-line quotes
+          " * <%= pkg.repository.url %>\n" + // eslint-disable-line quotes
+          " *\n" + // eslint-disable-line quotes
+          " * <%= pkg.author %>\n" + // eslint-disable-line quotes
+          " * Released under the <%= pkg.license %> license\n" + // eslint-disable-line quotes
+          " *\n" + // eslint-disable-line quotes
+          " * Date: <%= grunt.template.today('yyyy-mm-dd HH:mm:ss') %>\n" + // eslint-disable-line quotes
+          " */" // eslint-disable-line quotes
 }

@@ -1,8 +1,7 @@
 [![tests][tests]][tests-url]
 
 # js.mail.deobfuscate
-jQuery Plugin which deobfuscate rot13 caesar cipher encoded mailto links
-
+ES6 class, module and jQuery Plugin which deobfuscate rot13 caesar cipher encoded links.
 
 ## npm
 [![npm][npm]][npm-url]

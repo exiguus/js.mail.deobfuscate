@@ -3,13 +3,15 @@
  */
 
 'use strict'
-
 var config = require('./build/helper/config')
+config.options.pkg = require('./package.json')
 
 module.exports = function (grunt) {
   // load only used tasks and add fallbacks for those which cannot be find
   require('jit-grunt')(grunt, {
-    'replace': 'grunt-text-replace'
+    'replace': 'grunt-text-replace',
+    'usebanner': 'grunt-banner',
+    'comments': 'grunt-stripcomments'
   })
   // measures the time each task takes
   require('time-grunt')(grunt)
@@ -32,7 +34,9 @@ module.exports = function (grunt) {
   grunt.registerTask('dist', [
     'clean',
     'build',
-    'copy:dist'
+    'copy',
+    'comments',
+    'usebanner'
   ])
 
   grunt.registerTask('default', ['dist'])
