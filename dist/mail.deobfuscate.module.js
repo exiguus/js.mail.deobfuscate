@@ -1,11 +1,11 @@
 /*!
- * js.mail.deobfuscate 1.0.1
+ * js.mail.deobfuscate 2.0.0
  * https://github.com/exiguus/js.mail.deobfuscate.git
  *
  * Simon Gattner
  * Released under the MIT license
  *
- * Date: 2018-03-25 22:03:32
+ * Date: 2018-03-25 23:03:24
  */
 import MailDeobfuscate from './mail.deobfuscate.class'
 const deobfuscate = new MailDeobfuscate()
