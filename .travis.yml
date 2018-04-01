@@ -1,14 +1,5 @@
 language: node_js
-sudo: false
 node_js:
 - "6"
 - "8"
 - "9"
-before_script:
-- npm install -g grunt
-- npm install -g grunt-cli
-- npm install -g webpack
-- npm install -g webpack-cli
-- npm install -g karma
-- npm install -g karma-cli
-- npm install -g phantomjs

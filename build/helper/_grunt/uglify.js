@@ -2,11 +2,11 @@ module.exports = {
   options: {
     compress: {
       global_defs: {
-        'DEBUG': false
+        'DEBUG': false,
       },
-      dead_code: true
+      dead_code: true,
     },
-    sourceMap: false
+    sourceMap: false,
   },
   dist: {
     files: [
@@ -15,11 +15,11 @@ module.exports = {
         cwd: '<%= paths.dev %>/js/',
         src: 'jquery.<%= name.plugin %>.js',
         dest: '<%= paths.dist %>',
-        rename: function (dst, src) {
+        rename: function(dst, src) {
           // To keep the source js files and make new files as `*.min.js`:
-          return dst + '/' + src.replace('.js', '.min.js')
-        }
-      }
-    ]
-  }
-}
+          return dst + '/' + src.replace('.js', '.min.js');
+        },
+      },
+    ],
+  },
+};

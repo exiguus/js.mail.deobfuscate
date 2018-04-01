@@ -1,6 +1,6 @@
 module.exports = {
   options: {
-    configFile: './.eslintrc'
+    configFile: './.eslintrc',
   },
-  target: '<%= paths.dev %>/js/*.js'
-}
+  target: '<%= paths.dev %>/js/*.js',
+};

@@ -1,34 +1,52 @@
-/*!
- * js.mail.deobfuscate 2.0.0
- * https://github.com/exiguus/js.mail.deobfuscate.git
- *
- * Simon Gattner
- * Released under the MIT license
- *
- * Date: 2018-03-25 23:03:24
+/**
+ * @fileOverview Module to deobfuscate rot13 (caesar) encoded mailto-links.
+ * @author Simon Gattner <npm@0x38.de>
+ * @license MIT
+ * @version 2.1.0
  */
-import MailDeobfuscate from './mail.deobfuscate.class'
-const deobfuscate = new MailDeobfuscate()
 
-export default function mailDeobfuscate (element) {
-  let href = element.href
-  let title = element.title
-  let text = element.text
-  if (href.length > 0) {
-    href = href.split(':', 2)
-  }
-  if (href.length === 2) {
-    const proto = href[0]
-    const mail = href[1]
-    const deobfuscatedMail = deobfuscate.decode(mail)
-    if (proto === 'mailto') {
-      element.href = proto + ':' + deobfuscatedMail
+import MailDeobfuscate from './mail.deobfuscate.class';
+const deobfuscate = new MailDeobfuscate();
+
+/**
+ * Deobfuscate an rot13 (caesar) obfuscated mailto link.
+ * @param {object} object The object to deobfuscate.
+ * @module mailDeobfuscate
+ * @see MailDeobfuscate
+ */
+export default function mailDeobfuscate(object) {
+  let href = object.href;
+  let title = object.title;
+  let text = object.text;
+  try {
+    if (href.length > 0) {
+      href = href.split(':', 2);
     }
-    if (title.match(mail)) {
-      element.title = title.replace(mail, deobfuscatedMail)
+    try {
+      if (href.length === 2) {
+        const proto = href[0];
+        const mail = href[1];
+        const deobfuscatedMail = deobfuscate.decode(mail);
+        if (proto === 'mailto') {
+          object.href = proto + ':' + deobfuscatedMail;
+        }
+        if (title.match(mail)) {
+          object.title = title.replace(mail, deobfuscatedMail);
+        }
+        if (text.match(mail)) {
+          object.innerHTML = text.replace(mail, deobfuscatedMail);
+        }
+      }
+    } catch (error) {
+      console.info( // eslint-disable-line no-console
+        'Deobfuscate Mail: No link in href',
+        error
+      );
     }
-    if (text.match(mail)) {
-      element.innerHTML = text.replace(mail, deobfuscatedMail)
-    }
+  } catch (error) {
+    console.info( // eslint-disable-line no-console
+      'Deobfuscate Mail: No href protocoll',
+      error
+    );
   }
 }

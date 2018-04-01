@@ -16,11 +16,11 @@
 
         <main>
           <article>
-            <h2>Mail deobfuscating with <em>rot13 ceasar cipher</em></h2>
-            <p>The module deobfuscate a mailto-link which was obfuscated with <em>rot13 ceasar cipher</em> onClick in this example</p>
+            <h2>Mail deobfuscating with <em>rot13 caesar cipher</em></h2>
+            <p>The module deobfuscate a mailto-link which was obfuscated with <em>rot13 caesar cipher</em> onClick in this example</p>
             <h2>Example:</h2>
             <h3>
-              E-Mail with <em>rot13 ceasar cipher</em> ciphed:
+              E-Mail with <em>rot13 caesar cipher</em> ciphed:
             </h3>
             <ul>
               <li>
@@ -52,14 +52,14 @@
             <h4>mailDeobfuscate event binding</h4>
 <pre>
 <code>
-  import mailDeobfuscate from &#x27;./js/mail.deobfuscate.module&#x27;
+  import mailDeobfuscate from &#x27;./js/mail.deobfuscate.module&#x27;;
 
-  const elements = document.querySelectorAll(&#x27;a&#x27;)
+  const elements = document.querySelectorAll(&#x27;a&#x27;);
   elements.forEach(function (element) {
-    element.addEventListener(&#x27;click&#x27;, function () {
-      mailDeobfuscate(this)
-    })
-  })
+    element.addEventListener(&#x27;click&#x27;, function(event) {
+      mailDeobfuscate(event.target);
+    });
+  });
 </code>
 </pre>
           </article>

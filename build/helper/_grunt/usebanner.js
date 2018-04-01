@@ -3,15 +3,15 @@ module.exports = {
     options: {
       position: 'top',
       linebreak: true,
-      banner: '<%= banner %>'
+      banner: '<%= banner %>',
     },
     files: [
       {
         cwd: '<%= paths.dist %>/',
         dest: '<%= paths.dist %>/',
         expand: true,
-        src: ['*.js']
-      }
-    ]
-  }
-}
+        src: ['jquery.*.min.js'],
+      },
+    ],
+  },
+};

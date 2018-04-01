@@ -16,11 +16,11 @@
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="../dist/jquery.mail.deobfuscate.min.js"></script>
         <script>
-          $('a[href^="mailto:"]').each(function () {
-            $(this).on('click', function() {
-              $(this).mailDeobfuscate()
-            })
+        $('a[href^="mailto:"]').each(function (index, value) {
+          $(value).on('click', function(event) {
+            $(event.target).mailDeobfuscate()
           })
+        })
         </script>
         <script src="js/jquery.mail.deobfuscate.test.js"></script>
     </body>

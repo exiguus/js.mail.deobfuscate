@@ -4,13 +4,13 @@ module.exports = (config) => {
     browsers: ['PhantomJS'],
     files: [{
       pattern: 'src/js/*.class.test.js',
-      watched: false
+      watched: false,
     }, {
       pattern: 'src/js/*.module.test.js',
-      watched: false
+      watched: false,
     }],
     preprocessors: {
-      'src/js/*.test.js': ['webpack']
+      'src/js/*.test.js': ['webpack'],
     },
     webpack: {
       mode: 'production',
@@ -22,11 +22,11 @@ module.exports = (config) => {
             loader: 'babel-loader',
             exclude: /(node_modules)/,
             options: {
-              compact: true
-            }
-          }
-        ]
-      }
-    }
-  })
-}
+              compact: true,
+            },
+          },
+        ],
+      },
+    },
+  });
+};

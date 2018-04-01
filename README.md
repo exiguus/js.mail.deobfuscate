@@ -9,6 +9,32 @@ ES6 class, module and jQuery Plugin which deobfuscate rot13 caesar cipher encode
 npm install --save js.mail.deobfuscate
 ```
 
+## Example
+
+### jQuery plugin
+```html
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/js.mail.deobfuscate/dist/jquery.mail.deobfuscate.min.js"></script>
+<script>
+  $('a[href^="mailto:"]').each(function (index, value) {
+    $(value).on('click', function(event) {
+      $(event.target).mailDeobfuscate()
+    })
+  })
+</script>
+```
+
+### ES6
+```JavaScript
+import mailDeobfuscate from '../node_modules/js.mail.deobfuscate/dist/mail.deobfuscate.module';
+
+const elements = document.querySelectorAll('a');
+elements.forEach(function(element) {
+  element.addEventListener('click', function(event) {
+    mailDeobfuscate(event.target);
+  });
+});
+```
 
 [tests]: https://img.shields.io/travis/exiguus/js.mail.deobfuscate/master.svg
 [tests-url]: https://travis-ci.org/exiguus/js.mail.deobfuscate
