@@ -2,25 +2,25 @@
  * Gruntfile.js
  */
 
-'use strict'
-var config = require('./build/helper/config')
-config.options.pkg = require('./package.json')
+'use strict';
+let config = require('./build/helper/config');
+config.options.pkg = require('./package.json');
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
   // load only used tasks and add fallbacks for those which cannot be find
   require('jit-grunt')(grunt, {
     'replace': 'grunt-text-replace',
     'usebanner': 'grunt-banner',
-    'comments': 'grunt-stripcomments'
-  })
+    'comments': 'grunt-stripcomments',
+  });
   // measures the time each task takes
-  require('time-grunt')(grunt)
+  require('time-grunt')(grunt);
 
   // Load grunt configurations automatically
-  var configs = require('load-grunt-configs')(grunt, config.options)
+  let configs = require('load-grunt-configs')(grunt, config.options);
 
   // Define the configuration for all the tasks
-  grunt.initConfig(configs)
+  grunt.initConfig(configs);
 
   /*
    * TASKS
@@ -28,16 +28,17 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'eslint',
-    'uglify'
-  ])
+    'uglify',
+  ]);
 
   grunt.registerTask('dist', [
     'clean',
     'build',
     'copy',
     'comments',
-    'usebanner'
-  ])
+    'usebanner',
+    'jsdoc',
+  ]);
 
-  grunt.registerTask('default', ['dist'])
-}
+  grunt.registerTask('default', ['dist']);
+};

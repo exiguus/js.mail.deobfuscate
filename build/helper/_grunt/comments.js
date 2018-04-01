@@ -3,8 +3,8 @@ module.exports = {
     options: {
       singleline: true,
       multiline: true,
-      keepSpecialComments: true
+      keepSpecialComments: true,
     },
-    src: ['<%= paths.dist %>/*.js']
-  }
-}
+    src: ['<%= paths.dist %>/jquery.*.min.js'],
+  },
+};

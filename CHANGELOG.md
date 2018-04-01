@@ -1,5 +1,12 @@
 # Change Log
 
+## 2.1.0
+### Feature
+* add JSDoc
+* replace eslint standard with google and recommanded
+* refactor es6 class/module and jQuery Plugin according to JSDoc and eslint google
+* add eslint and JSDoc to build process
+
 ## 2.0.0
 ### Feature
 * add ES6 Version of the Plugin as ECMAScript Class and Module

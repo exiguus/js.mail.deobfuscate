@@ -16,11 +16,11 @@
 
         <main>
           <article>
-            <h2>Mail deobfuscating with <em>rot13 ceasar cipher</em></h2>
-            <p>The plugin deobfuscate a mailto-link which was obfuscated with <em>rot13 ceasar cipher</em> onClick in this example</p>
+            <h2>Mail deobfuscating with <em>rot13 caesar cipher</em></h2>
+            <p>The plugin deobfuscate a mailto-link which was obfuscated with <em>rot13 caesar cipher</em> onClick in this example</p>
             <h2>Example:</h2>
             <h3>
-              E-Mail with <em>rot13 ceasar cipher</em> ciphed:
+              E-Mail with <em>rot13 caesar cipher</em> ciphed:
             </h3>
             <ul>
               <li>
@@ -53,9 +53,9 @@
 <pre>
 <code>
   &lt;script&gt;
-    $('a[href^=&quot;mailto:&quot;]').each(function () {
-      $(this).on('click', function() {
-        $(this).mailDeobfuscate()
+    $('a[href^=&quot;mailto:&quot;]').each(function (index, value) {
+      $(value).on('click', function(event) {
+        $(event.target).mailDeobfuscate()
       })
     })
   &lt;/script&gt;
@@ -66,9 +66,9 @@
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="js/jquery.mail.deobfuscate.js"></script>
         <script>
-          $('a[href^="mailto:"]').each(function () {
-            $(this).on('click', function() {
-              $(this).mailDeobfuscate()
+          $('a[href^="mailto:"]').each(function (index, value) {
+            $(value).on('click', function(event) {
+              $(event.target).mailDeobfuscate()
             })
           })
         </script>
