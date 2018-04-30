@@ -1,0 +1,17 @@
+build/
+src/
+node_modules/
+target/
+.git
+.babelrc
+.editorconfig
+.eslintrc
+.gitignore
+.npmrc
+.npmignore
+Gruntfile.js
+jsdoc.json
+karma.conf.js
+pom.xml
+webpack.*
+package-lock.json

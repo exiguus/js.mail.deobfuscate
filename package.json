@@ -56,7 +56,8 @@
     "test-qunit": "node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs src/index.jquery.test.html",
     "test-qunit-min": "node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs src/index.jquery.min.test.html",
     "test-jasmine": "cross-env NODE_ENV=dev karma start --single-run",
-    "lint": "node_modules/eslint/bin/eslint.js --fix src/js/**"
+    "lint": "node_modules/eslint/bin/eslint.js src/js/**",
+    "lint-fix": "node_modules/eslint/bin/eslint.js --fix src/js/**"
   },
   "keywords": [
     "rot13",
@@ -71,6 +72,7 @@
     "ECMAScript",
     "jquery"
   ],
+  "main": "dist/mail.deobfuscate.module.js",
   "author": "Simon Gattner <npm@0x38.de>",
   "license": "MIT",
   "repository": {
