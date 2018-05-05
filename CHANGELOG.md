@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.1.1
+### Feature
+* add coverage tests
+
 ## 2.1.0
 ### Feature
 * add JSDoc
