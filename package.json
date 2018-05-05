@@ -1,6 +1,6 @@
 {
   "name": "js.mail.deobfuscate",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "ES6 class, module and jQuery Plugin which deobfuscate rot13 caesar cipher encoded links",
   "devDependencies": {
     "babel-core": "^6.26.3",

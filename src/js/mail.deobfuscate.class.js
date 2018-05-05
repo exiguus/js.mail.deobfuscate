@@ -25,6 +25,7 @@ export default class MailDeobfuscate {
   }
   /**
    * Get the decoded rot13 (caesar) string.
+   * @function MailDeobfuscate.decode
    * @param {string} string The encoded rot13 (caesar) string.
    * @return {string} Encoded rot13 (caesar) string.
    */

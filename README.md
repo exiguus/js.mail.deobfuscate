@@ -1,4 +1,6 @@
 [![tests][tests]][tests-url]
+[![coverage][coverage]][coverage-url]
+[![maintainability][maintainability]][maintainability-url]
 
 # js.mail.deobfuscate
 ES6 class, module and jQuery Plugin which deobfuscate rot13 caesar cipher encoded links.
@@ -25,7 +27,7 @@ npm install --save js.mail.deobfuscate
 ```
 
 ### ES6
-```JavaScript
+```js
 import mailDeobfuscate from '../node_modules/js.mail.deobfuscate/dist/mail.deobfuscate.module';
 
 const elements = document.querySelectorAll('a');
@@ -38,6 +40,16 @@ elements.forEach(function(element) {
 
 [tests]: https://img.shields.io/travis/exiguus/js.mail.deobfuscate/master.svg
 [tests-url]: https://travis-ci.org/exiguus/js.mail.deobfuscate
+
+[maintainability]:
+https://api.codeclimate.com/v1/badges/8b7c86a67b5706e9be47/maintainability
+[maintainability-url]:
+https://codeclimate.com/github/exiguus/js.mail.deobfuscate/maintainability
+
+[coverage]:
+https://api.codeclimate.com/v1/badges/8b7c86a67b5706e9be47/test_coverage
+[coverage-url]:
+https://codeclimate.com/github/exiguus/js.mail.deobfuscate/test_coverage
 
 [npm]: https://img.shields.io/npm/v/js.mail.deobfuscate.svg
 [npm-url]: https://npmjs.com/package/js.mail.deobfuscate
