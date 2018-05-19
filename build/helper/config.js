@@ -16,7 +16,7 @@ config.options = {
     // dist folder with minified and optimized files
     dist: 'dist',
     // doc folder jsdoc3
-    doc: 'doc',
+    docs: 'docs',
   },
   name: {
     plugin: 'mail.deobfuscate',
