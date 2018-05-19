@@ -38,6 +38,9 @@ elements.forEach(function(element) {
 });
 ```
 
+## Documentation
+[jsDoc](https://exiguus.github.io/js.mail.deobfuscate/)
+
 [tests]: https://img.shields.io/travis/exiguus/js.mail.deobfuscate/master.svg
 [tests-url]: https://travis-ci.org/exiguus/js.mail.deobfuscate
 
