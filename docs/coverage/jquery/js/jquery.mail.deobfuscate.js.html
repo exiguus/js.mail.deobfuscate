@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/jquery.mail.deobfuscate.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">js/</a> jquery.mail.deobfuscate.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.59% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>25/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">85.71% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>12/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.31% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>24/26</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">166×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">171×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * @fileOverview jQuery Plugin
+  to deobfuscate rot13 (caesar) encoded mailto-links.
+ * @author Simon Gattner &lt;npm@0x38.de&gt;
+ * @license MIT
+ * @version 2.1.0
+ */
+&nbsp;
+/**
+ * @external "jQuery.fn"
+ * @see {@link http://docs.jquery.com/Plugins/Authoring The jQuery Plugin Guide}
+ */
+&nbsp;
+(function($) {
+  'use strict';
+  /**
+   * jQuery Methods to decode a rot13 (caesar) encoded string.
+   * @function external:"jQuery".mailDeobfuscate
+   */
+&nbsp;
+  $.mailDeobfuscate = {
+    /**
+     * jQuery Method to decode a rot13 (caesar) encoded string.
+     * @function external:"jQuery".mailDeobfuscate.getDecodeString
+     * @param {string} string The encoded rot13 (caesar) string.
+     * @return {string} Encoded rot13 (caesar) string.
+     */
+&nbsp;
+    getDecodeString: function(string) {
+      return string.replace(
+        /[a-zA-Z]/g,
+        function(string) {
+         return $.mailDeobfuscate.getDecodeChar(string);
+       }
+     );
+    },
+    /**
+     * jQuery Method to decode a rot13 (caesar) encoded char.
+     * @function external:"jQuery".mailDeobfuscate.getDecodeChar
+     * @param {string} string The encoded rot13 (caesar) char.
+     * @return {string} Encoded rot13 (caesar) char.
+     */
+&nbsp;
+    getDecodeChar: function(c) {
+      return String.fromCharCode(
+        (c &lt;= 'Z' ? 90 : 122) &gt;= (c = c.charCodeAt(0) + 13) ? c : c - 26
+      );
+    },
+  };
+  /**
+   * jQuery Prototype to deobfuscate an rot13 (caesar) obfuscated object.
+   * @function external:"jQuery.fn".mailDeobfuscate
+   */
+&nbsp;
+  $.fn.mailDeobfuscate = function() {
+    return this.not('[data-deobfuscate="done"]').each(function(index, value) {
+      var object = $(value); // eslint-disable-line no-var
+      var href = object.attr('href'); // eslint-disable-line no-var
+      var title = object.attr('title'); // eslint-disable-line no-var
+      var text = object.text(); // eslint-disable-line no-var
+      try {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (href.length &gt; 0) href = href.split(':', 2);
+        try {
+          <span class="missing-if-branch" title="else path not taken" >E</span>if (href.length === 2) {
+            var proto = href[0]; // eslint-disable-line no-var
+            var mail = href[1]; // eslint-disable-line no-var
+            var newMail = // eslint-disable-line no-var
+              $.mailDeobfuscate.getDecodeString(mail);
+            if (proto === 'mailto') {
+              object
+                .attr('href', proto + ':' + newMail)
+                .attr('data-deobfuscate', 'done');
+            }
+            if (title.match(mail)) {
+              object.attr('title', title.replace(mail, newMail));
+            }
+            if (text.match(mail)) {
+              object.text(text.replace(mail, newMail));
+            }
+          }
+        } catch (error) {
+<span class="cstat-no" title="statement not covered" >          console.info( // eslint-disable-line no-console</span>
+            'Deobfuscate Mail: No link in href',
+            error
+          );
+        }
+      } catch (error) {
+<span class="cstat-no" title="statement not covered" >        console.info( // eslint-disable-line no-console</span>
+          'Deobfuscate Mail: No href protocoll',
+          error
+        );
+      }
+    });
+  };
+}(jQuery));
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat May 26 2018 22:42:04 GMT+0200 (CEST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

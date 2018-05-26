@@ -39,7 +39,9 @@ elements.forEach(function(element) {
 ```
 
 ## Documentation
-[jsDoc](https://exiguus.github.io/js.mail.deobfuscate/)
+* [jsDoc](https://exiguus.github.io/js.mail.deobfuscate/)
+* [Coverage ES6](https://exiguus.github.io/js.mail.deobfuscate/coverage/es6/)
+* [Coverage jQuery](https://exiguus.github.io/js.mail.deobfuscate/coverage/jquery/)
 
 [tests]: https://img.shields.io/travis/exiguus/js.mail.deobfuscate/master.svg
 [tests-url]: https://travis-ci.org/exiguus/js.mail.deobfuscate

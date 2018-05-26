@@ -1,7 +1,9 @@
 build/
 src/
 node_modules/
+static/
 target/
+coverage/
 .git
 .babelrc
 .editorconfig
@@ -11,7 +13,6 @@ target/
 .npmignore
 Gruntfile.js
 jsdoc.json
-karma.conf.js
-pom.xml
-webpack.*
+karma.*.js
+webpack.*.js
 package-lock.json

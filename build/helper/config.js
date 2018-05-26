@@ -17,6 +17,12 @@ config.options = {
     dist: 'dist',
     // doc folder jsdoc3
     docs: 'docs',
+    // src folder
+    src: 'src',
+    // coverage report
+    coverage: 'coverage',
+    // static files
+    static: 'static',
   },
   name: {
     plugin: 'mail.deobfuscate',

@@ -12,6 +12,7 @@ module.exports = function(grunt) {
     'replace': 'grunt-text-replace',
     'usebanner': 'grunt-banner',
     'comments': 'grunt-stripcomments',
+    'strip_code': 'grunt-strip-code',
   });
   // measures the time each task takes
   require('time-grunt')(grunt);
@@ -26,6 +27,13 @@ module.exports = function(grunt) {
    * TASKS
    */
 
+   grunt.registerTask('coverage', [
+     'copy:coverageEs6',
+     'copy:icovEs6',
+     'copy:coverageJquery',
+     'copy:icovJquery',
+   ]);
+
   grunt.registerTask('build', [
     'eslint',
     'uglify',
@@ -34,10 +42,12 @@ module.exports = function(grunt) {
   grunt.registerTask('dist', [
     'clean',
     'build',
-    'copy',
+    'copy:dist',
+    'strip_code',
     'comments',
     'usebanner',
     'jsdoc',
+    'copy:static',
   ]);
 
   grunt.registerTask('default', ['dist']);
