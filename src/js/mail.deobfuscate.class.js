@@ -2,7 +2,7 @@
  * @fileOverview Class to decode a rot13 (caesar) encoded string.
  * @author Simon Gattner <npm@0x38.de>
  * @license MIT
- * @version 2.1.0
+ * @version 2.2.0
  */
 export default class MailDeobfuscate {
   /**

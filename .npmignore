@@ -11,8 +11,7 @@ coverage/
 .gitignore
 .npmrc
 .npmignore
+.travis.yml
+.codeclimate.yml
 Gruntfile.js
-jsdoc.json
-karma.*.js
-webpack.*.js
 package-lock.json

@@ -54,7 +54,7 @@
 <code>
   import mailDeobfuscate from &#x27;./js/mail.deobfuscate.module&#x27;;
 
-  const elements = document.querySelectorAll(&#x27;a&#x27;);
+  const elements = document.querySelectorAll(&#x27;a&#x27[href^="mailto:"];);
   elements.forEach(function (element) {
     element.addEventListener(&#x27;click&#x27;, function(event) {
       mailDeobfuscate(event.target);

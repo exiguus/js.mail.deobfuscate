@@ -1,4 +1,4 @@
-import MailDeobfuscate from '../../dist/mail.deobfuscate.class';
+import MailDeobfuscate from './mail.deobfuscate.class';
 
 describe('mailDeobfuscate class', () => {
   it('mailDeobfuscate is Object', () => {

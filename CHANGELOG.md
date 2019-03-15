@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.2.0
+### Feature
+* add umd module to dist
+
 ## 2.1.1
 ### Feature
 * add coverage tests

@@ -3,7 +3,7 @@
   to deobfuscate rot13 (caesar) encoded mailto-links.
  * @author Simon Gattner <npm@0x38.de>
  * @license MIT
- * @version 2.1.0
+ * @version 2.2.0
  */
 
 /**

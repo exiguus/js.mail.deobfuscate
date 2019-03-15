@@ -1,6 +1,6 @@
 module.exports = {
   dist: {
-    src: ['dist/*.js'],
+    src: ['src/js/*.js'],
     options: {
       destination: '<%= paths.docs %>',
       readme: 'README.md',

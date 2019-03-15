@@ -1,4 +1,4 @@
-import mailDeobfuscate from '../../dist/mail.deobfuscate.module';
+import mailDeobfuscate from './mail.deobfuscate.module';
 
 describe('mailDeobfuscate module', () => {
   it('mailDeobfuscate is function', () => {

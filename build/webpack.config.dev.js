@@ -3,7 +3,17 @@ const webpackConfig = require('./webpack.config');
 
 module.exports = merge(webpackConfig, {
 
-  devtool: 'eval',
+  devtool: '#inline-source-map',
+
+  plugins: [
+    new webpack.DefinePlugin({
+      IS_DEV: IS_DEV,
+    }),
+
+    new HtmlWebpackPlugin({
+      template: path.join(dirApp, 'index.html'),
+    }),
+  ],
 
   output: {
     pathinfo: true,
