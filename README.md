@@ -30,7 +30,7 @@ npm install --save js.mail.deobfuscate
 ```js
 import mailDeobfuscate from '../node_modules/js.mail.deobfuscate/dist/mail.deobfuscate.module';
 
-const elements = document.querySelectorAll('a[href⁼"mailto:"]');
+const elements = document.querySelectorAll('a[href="mailto:"]');
 elements.forEach(function(element) {
   element.addEventListener('click', function(event) {
     mailDeobfuscate(event.target);
