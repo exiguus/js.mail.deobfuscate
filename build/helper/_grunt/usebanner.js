@@ -10,7 +10,7 @@ module.exports = {
         cwd: '<%= paths.dist %>/',
         dest: '<%= paths.dist %>/',
         expand: true,
-        src: ['jquery.*.min.js'],
+        src: ['*.min.js'],
       },
     ],
   },

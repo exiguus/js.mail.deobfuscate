@@ -6,7 +6,7 @@ module.exports = {
       },
       dead_code: true,
     },
-    sourceMap: false,
+    sourceMap: true,
   },
   dist: {
     files: [
